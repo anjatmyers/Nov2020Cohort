@@ -15,10 +15,11 @@ do
         mkdir "${week}/${day}/labs"
         touch "${week}/${day}/labs/.gitignore"
 
-        mkdir "${week}/${day}/preLectureNotes"
-        touch "${week}/${day}/preLectureNotes/.gitignore"
+        mkdir "${week}/${day}/veros-notes-dont-touch"
+        touch "${week}/${day}/veros-notes-dont-touch/.gitignore"
+        mkdir "${week}/${day}/veros-notes-dont-touch/labs"
 
-        mkdir "${week}/${day}/postLectureNotes"
-        touch "${week}/${day}/postLectureNotes/.gitignore"
+        mkdir "${week}/${day}/lectureNotes"
+        touch "${week}/${day}/lectureNotes/.gitignore"
     done
 done
