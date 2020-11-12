@@ -10,8 +10,12 @@ planet6 = "Mercury"
 planet7 = "Uranus"
 planet8 = "Venus"
 
-# 2. Print out how many elements are in the planet list
+# planets = ["Earth", "Jupiter", "Neptune", "Mars", "Saturn", "Mercury", "Uranus", "Venus"]
+# print(planets)
 
+
+# 2. Print out how many elements are in the planet list
+print(len(planets))
 
 # 3. Create a while loop that iterates through each of the items in the planet list
 # and changes them to lowercase .
