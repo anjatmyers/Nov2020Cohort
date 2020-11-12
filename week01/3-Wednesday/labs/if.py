@@ -1,6 +1,7 @@
 # Consider a program that determines whether people are tall
 # enough to ride a roller coaster
-
+height = input("How tall are you? (in inches)")
+must_be_this_tall = 
 
 # Given the following code that prompts the user for a
 # day number (Remember that the int function converts a numeric string to a number)
