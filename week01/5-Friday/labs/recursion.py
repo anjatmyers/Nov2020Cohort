@@ -31,7 +31,7 @@
 # an array of numbers and returns the product of them all
 
 
-# 7. Write a recursive functiosn called fib which accepts a number and
+# 7. Write a recursive function called fib which accepts a number and
 # returns the nth number in teh Fibonacci Sequence. Recall that the
 # Fibonacci Sequence is the Sequence of whole numbers 1, 1, 2, 3, 5, 8, ... which
 # starts with 1 and 1, and where ever number
