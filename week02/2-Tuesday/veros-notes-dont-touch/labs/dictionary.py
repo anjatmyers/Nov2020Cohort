@@ -1,4 +1,4 @@
-# 1. Create a dictionary called zodiac with the following inforation.
+# 1. Create a dictionary called zodiac with the following information.
 # Each key is the name of the zodiac
 
 
@@ -27,7 +27,7 @@ phonebook_dict = {
 }
 
 
-phonebook_dict["Kareem"] = "938-489-1234"
+# phonebook_dict["Kareem"] = "938-489-1234"
 # 2a. Print Elizabeth's phone number
 # 2b. Add a entry to the dictionary: Kareem's number is 938-489-1234.
 # 2c. Delete Alice's phone entry.
@@ -68,8 +68,18 @@ ramit = {
 # >>>letter_histogram('banana')
 # {'a': 3, 'b': 1, 'n': 2}
 
+def histogram(word):
+    pass
+
 
 # Word Summary
-# Write a word_histogram function that takes a paragraph of text as its input, and returns a dictionary containing the tally of how many times each word in the alphabet was used in the text. For example:
+# Write a word_histogram function that takes a paragraph of 
+# text as its input, and returns a dictionary containing 
+# the tally of how many times each word in the alphabet was 
+# used in the text. For example:
 
-# >>> word_histogram('To be or not to
+# >>> word_histogram('To be or not to be')   ['To', 'be', 'or', 'not', 'to', 'be']
+
+{'To': 2,
+ 'be': 1
+ }
