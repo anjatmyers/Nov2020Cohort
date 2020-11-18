@@ -1,8 +1,8 @@
 
 # CRUD 
-myList = [2,       5, 7, 7]
+# myList = [2,       5, 7, 7]
 
-myList[0] = 99
+# myList[0] = 99
 
 # myList[1]
 
@@ -87,6 +87,35 @@ myList[0] = 99
 
 # print(result)
 
+import pickle 
+
+
+# ramit = {
+#     'name': 'Ramit',
+#     'email': 'ramit@gmail.com',
+#     'interests': ['movies', 'tennis'],
+#     'friends': [
+#         {
+#             'name': 'Jasmine',
+#             'email': 'jasmine@yahoo.com',
+#             'interests': ['photography', 'tennis']
+#         },
+#         {
+#             'name': 'Jan',
+#             'email': 'jan@hotmail.com',
+#             'interests': ['movies', 'tv']
+#         }
+#     ]
+# }
+
+# with open('ramit.pickle', 'wb') as fx: 
+#     pickle.dump(ramit, fx)
+    
+
+with open('ramit.pickle', 'rb') as fh:
+    phoneBook = pickle.load(fh)
+    
+print(phoneBook)
 
 
 
