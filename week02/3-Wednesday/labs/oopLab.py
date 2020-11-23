@@ -2,8 +2,33 @@
 
 # 1. Create an empty class called "Student"
 
+# class Student:
+#     def __init__(self, first, last):
+#         self.first = first
+#         self.last = last
 
-# 2. Create 5 students objects (instances of the class "Student") of "Student" types
+#     def greeting(self):
+#         print(f"Good morning, {self.first}")
+    
+#     def full_name(self):
+#         print(f"{self.first} {self.last}")
+
+# stud_1 = Student('Andrea', 'Myers')
+# stud_2 = Student('Ally', 'Smith')
+# stud_3 = Student('Kanny', 'Jones')
+# stud_4 = Student('Kim', 'Roberts')
+# stud_5 = Student('Veronica', 'Lino')
+
+
+# Student.greeting(stud_1)
+# Student.greeting(stud_2)
+# Student.greeting(stud_3)
+# Student.greeting(stud_4)
+# Student.greeting(stud_5)
+
+
+
+# 2. 5 students objects (instances of the class "Student") of "Student" types
 
 
 # 3a. Create a "greeting" method inside of the class "Student" class that
@@ -69,6 +94,37 @@
 # Create a Hybrid instance and an Electric instance
 # Call the method CarType on the Hybrid Instance and Electric Instance
 # Call the method Car Details on each instance
+class Car:
+    def __init__(self, make, model, color):
+        self.make = make
+        self.model = model
+        self.color = color
+
+    def carDetails(self):
+        print(f"Here are details of this car:\n make: {self.make}\n model: {self.model}\n color: {self.color}")
+
+# the child Hyrid is inheriting from the parent Car
+class Hybrid(Car): 
+    
+    def carType(self):
+        print("I am a hybrid car")
+
+class Electric(Car): 
+    
+    def carType(self):
+        print("I am an Electric car")
+
+prius = Hybrid('Toyota', 'prius', 'lime green')
+tesla = Electric('Tesla', 'ModelS', 'sky blue')
+
+print(prius.make)
+prius.carType()
+prius.carDetails()
+
+print(tesla.make)
+tesla.carType()
+tesla.carDetails()
+
 
 
 # Add the following instance variables to the Car class :
@@ -86,3 +142,83 @@
 # Super()
 
 # COMPOSITION
+
+
+
+
+
+
+# class Counter:
+#     def __init__(self):
+#         self.count = 0
+
+#     def incrementCount(self):
+#         self.count += 1
+#         return self.count
+
+# count1 = Counter()
+
+# print("count 1", count1.incrementCount())
+# print("count 1", count1.incrementCount())
+# print("count 1", count1.incrementCount())
+# print("count 1", count1.incrementCount())
+# print("count 1", count1.incrementCount())
+
+# count2 = Counter()
+
+# print("count 2", count2.incrementCount())
+# print("count 2", count2.incrementCount())
+# print("count 2", count2.incrementCount())
+
+# print("count 1", count1.incrementCount())
+
+## Using objects through a class allows you to keep track of the data in memory. 
+# Functions don't keep track of anything, once its over the data is gone
+
+
+#### Creating a new class 'of person type'
+
+# class Person:
+#     def __init__(self, first, last, birthdate, address, phone, email):
+#         self.first = first
+#         self.last = last  
+#         self.birthdate = birthdate 
+#         self.address = address
+#         self.phone = phone
+#         self: email = email 
+    
+#     def age(self):
+#         pass
+
+
+# person1 = Person('Andrea', 'Myers', '1/1/2005', '123 sesame st', '333-333-3333', 'andream.gmail.com')
+
+# person1.age()
+
+######## Another practice class
+
+# class Person:
+#     def __init__(self, name, email, phone):
+#         self.name = name
+#         self.email = email
+#         self.phone = phone
+    
+#     def greet(self, other_person):
+#         print(f"Hey, {other_person.name}. Welcome. My name is {self.name}.")
+
+#     def contact_info(self):
+#         print(f"What to contact {self.name}?\nEmail: {self.email} Phone: {self.phone}")
+
+
+# sonny = Person('Sonny', 'sonny@hotmail.com','123-456-6789')
+# jordan = Person('Jordan', 'jordan@aol.com', '987-654-3245')
+
+
+# sonny.greet(jordan)
+# jordan.greet(sonny)
+
+# # sonny.contact_info()
+# # jordan.contact_info()
+# ###alternate way to call to the class methods 
+# Person.contact_info(sonny)
+# Person.contact_info(jordan)
