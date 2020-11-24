@@ -6,12 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <style>
+        /* .main{
+            position: relative;
+        }
+        .abs{
+            position: absolute;
+            bottom: 150px;
+            background-color: lightpink;
+        } */
+
+        .rel{
+            background-color: lightcoral;
+            position: relative;
+            left: 100px;
+            margin: 15px 0 15px 0;
+        }
+
+        /* .fixed{
+            position: fixed;
+            top: 15px;
+            background-color: lightsalmon;
+        } */ */
+
+        /* fixed is good for navigation bars */
+
+        /* the space with relative positioning doesn't close */
+
+    
+
+        /* you have to have the parent element set a relative and child set to absolute
+        absolute collapses from where it was originally */
+        /* if you dont set a parent as relative, it will be relative to the viewport */
+
+/* z index allows you to layer things on top of eachother
+the higher the number, the closer it is to the top */
+
+/* float: left, right, none, inherit */
+
+
+
+        img {
+            position: sticky;
+            top: 30px;
+            width: 200px;
+            z-index: 10;
+        }
+
+
+    </style>
+
 </head>
 
 <body>
 
 
-    <div>
+    <div class="fixed">
         The preamble sets the stage for the Constitution (Archives.gov). It clearly communicates the intentions of the
         framers and the purpose of the document. The preamble is an introduction to the highest law of the land; it is
         not the law. It does not define government powers or individual rights.
@@ -38,14 +88,15 @@
         ourselves and our Posterity, do ordain and establish this Constitution for the United States of America."
     </div>
 
-    <!-- <div id="kittens">
+
         <img src="images/kittens3.jpg" alt="">
-    </div> -->
+
 
     <div id="navbar">
         navbar
     </div>
-    <div class="rel">
+    <div class="main">
+        <div class="abs">
         The preamble sets the stage for the Constitution (Archives.gov). It clearly communicates the intentions of the
         framers and the purpose of the document. The preamble is an introduction to the highest law of the land; it is
         not the law. It does not define government powers or individual rights.
@@ -57,7 +108,8 @@
         "We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic
         Tranquility, provide for the common defense, promote the general Welfare, and secure the Blessings of Liberty to
         ourselves and our Posterity, do ordain and establish this Constitution for the United States of America."
-    </div>
+    </div></div>
+    
 
     <!-- <img id="puppy" src="images/puppies2.jpg" alt=""> -->
 

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+        background-color: cyan;
+        border: 2px solid black;
+        height: 200px;
+        margin: 20px;
+        text-align: center;
+        }
+        span{
+        background-color: yellow;
+        border: 2px solid black;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+       
+        }
+        a{
+        background-color: orange;
+        border: 2px solid orange; 
+        width: 100px;
+        height: 100px; 
+        /* Doesnt work unless you use display: block; level. the content box wraps the content. You can add padding but not height or width */
+        display: inline-block;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* ^^this allows you to center your image */
+        h1, h2 {
+            display: inline;
+        }
+
+        p{
+            width: 400px;
+            margin-left:auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Hello</h1>
+    <h2>How are you?</h2>
+    <div> <img src="images/puppies3.jpg" width="250px"></div>
+
+    <img src="images/puppies3.jpg" width="250px"></div>
+
+
+
+    <div>I'm div</div>
+    <div>I'm div</div>
+    <div>I'm div</div>
+    <span>I'm span</span>
+    <span>I'm span</span>
+    <a href="">I'm an anchor</a>
+    <a href="">I'm an anchor</a>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam eligendi dolor veritatis dicta dolore quidem et repudiandae assumenda reprehenderit, quod, possimus optio perspiciatis. Et aliquid ullam unde accusantium repudiandae nam!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam eligendi dolor veritatis dicta dolore quidem et repudiandae assumenda reprehenderit, quod, possimus optio perspiciatis. Et aliquid ullam unde accusantium repudiandae nam!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam eligendi dolor veritatis dicta dolore quidem et repudiandae assumenda reprehenderit, quod, possimus optio perspiciatis. Et aliquid ullam unde accusantium repudiandae nam!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam eligendi dolor veritatis dicta dolore quidem et repudiandae assumenda reprehenderit, quod, possimus optio perspiciatis. Et aliquid ullam unde accusantium repudiandae nam!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam eligendi dolor veritatis dicta dolore quidem et repudiandae assumenda reprehenderit, quod, possimus optio perspiciatis. Et aliquid ullam unde accusantium repudiandae nam!
+    </p>
+    
+</body>
+</html>
+
+<!-- div and paragraphs are block elements will stack on top
+inline elements will be side by side -->
+<!-- can use breaks as a hack or the display property. 
+cannot adjust the width or height of inline element
+
+inline -block elements will be side by side but you CAN adjust height and width-->
+
+
+<!-- to center an image, you need to nest it in a block element like a div that goes across the page. the image itself doesnt have space to center it in  -->
+<!-- 
+OR set it to inline-block display and give it a width of 100%. this will give the box space across the whole screen -->

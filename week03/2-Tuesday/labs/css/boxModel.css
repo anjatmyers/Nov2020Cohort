@@ -1,0 +1,11 @@
+.myBox{
+    background-color:lightblue;
+    width: 200px;
+    height: 200px;
+    border: 5px black solid;
+    overflow: scroll;
+}
+div {
+    border: 5px black solid;
+    padding: 20px;
+}
