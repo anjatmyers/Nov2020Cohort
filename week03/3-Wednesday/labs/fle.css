@@ -1,0 +1,50 @@
+body{
+    margin: 0px;
+}
+
+.container{
+    height: 500px;
+    background-color: burlywood;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    /* tells you where your main axis is  */
+    /* default direction in row but you can change to column or a row reverse 
+    justify-content works on the main axis*/
+    justify-content: space-around;
+    align-items: center;
+    /* cant stretch down the page if you take the height away from the child */
+    /* works on the cross axis (opposite of the main axis set by justify content*/
+    flex-wrap: wrap;
+
+}
+
+p{
+    height: 200px;
+    width: 200px;
+    background-color: tomato;
+    margin: 5px;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item1{
+    order: 1
+}
+.item2{
+    order: 2
+}
+.item3{
+    order: 3
+}
+.item4{
+    order: 4
+} 
+/* can use this to reorder item */
+
+/* align-self works on the cross axis and allows you to use a class to leave one child element out of the regular order but still keep others in the flexbox */
