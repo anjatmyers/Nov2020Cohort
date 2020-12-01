@@ -10,6 +10,11 @@ font, backg
 */
 
 /* background colors */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
 .cp-bg-black {
   background-color: black;
 }
