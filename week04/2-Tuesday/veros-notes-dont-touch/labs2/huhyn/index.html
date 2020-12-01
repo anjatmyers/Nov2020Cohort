@@ -22,12 +22,21 @@
 
         <div class="header position-relative top">
             
-            <div class="position-absolute top h-100 w-100 cp-text-white z20">
+            <div class="position-absolute top h-100 w-100 cp-text-white z20 d-flex flex-column justify-content-center align-items-center">
                 <!--text-->
-                Huhyn Restaurant
+                <div class="display-2 cp-text-accent">Huhyn Restaurant</div>
+                <div class="h3 cp-text-what">Vietnamese Restaurant</div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+                    Join our newsletter
+                </button>
+
             </div>
 
            
+            <div class="position-absolute z15 top cp-bg-black w-100 h-100 opactiy">
+                <!--opacity layer-->
+            </div>
 
 
             <div class="position-absolute top z10 embed-responsive embed-responsive-16by9">
@@ -40,6 +49,29 @@
         </div>
 
     </div>
+
+
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Join our Huhyn Newsletter</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Information out our food
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-warning">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
