@@ -24,31 +24,75 @@
             
             <div class="position-absolute top h-100 w-100 cp-text-white z20 d-flex flex-column justify-content-center align-items-center">
                 <!--text-->
-                <div class="display-2 cp-text-accent">Huhyn Restaurant</div>
+                <div class="display-2 cp-text-accent d-none d-md-block">Huhyn Restaurant</div>
+                <div class="h3 cp-text-accent d-md-none d-lg-none d-xl-none">Huhyn Restaurant</div>
+
                 <div class="h3 cp-text-what">Vietnamese Restaurant</div>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-warning d-none d-md-block" data-toggle="modal" data-target="#exampleModal">
                     Join our newsletter
                 </button>
 
             </div>
 
-           
             <div class="position-absolute z15 top cp-bg-black w-100 h-100 opactiy">
                 <!--opacity layer-->
             </div>
 
 
-            <div class="position-absolute top z10 embed-responsive embed-responsive-16by9">
+            <div class="d-none d-md-block position-absolute top z10 embed-responsive embed-responsive-16by9">
                 <!--video-->
                 <iframe width="100%"  src="https://www.youtube.com/embed/hz70ucYZyy4?autoplay=1&mute=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
+            <div class="d-md-none d-lg-none d-xl-none position-absolute top z10 h-100 w-100">
+                
+                <img src="images/noodles.jpg" alt="">
+            </div>
+
             
 
-        </div>
+        </div><!--end of header container-->
 
-    </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light-gray">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+
+
+          <main>
+              <div class="dark"></div>
+              <div class="light"></div>
+              <div class="dark"></div>
+              <div class="light"></div>
+              <div class="dark"></div>
+              <div class="light"></div>
+              
+          </main>
+
+          <footer>
+
+          </footer>
+    </div><!--end of container-fluid-->
 
 
 
