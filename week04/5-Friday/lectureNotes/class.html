@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .titleBlue {
+           background-color: blue;
+        }
+
+        .title {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p class="title">one</p>
+    <p class="title">two</p>
+    <p class="title">three</p>
+    <p class="title">four</p>
+    
+    <!-- the Dom represents what we in the viewport
+    It creates a document object which allows us to apply styles to our html 
+
+The object model allows us to have attributes like classes and ids 
+A tree is a type of data structure, like an object or dictionary 
+It is a way that we organize data so that we can build relationships to one another and so that we can refernce specific data specifically-->
+
+<!-- Each element in the Document object is called a node 
+
+document.body
+document.title
+document.URL
+allows you to access these parts of the Document -->
+
+
+<!-- 
+    There are Methods available to access the Document:
+
+    getElementsByID  (retrieving an element by id name)
+    getElementsByClassName (retrieving an element by class name)
+    getElementsByTagName ((retrieving an element by tag name, such as div, p, span, header, etc)
+    getElementsByTagNameNS (retrieving an element by tag name, such as div, p, span, header, etc)
+    )
+ -->
+
+<!-- <div id="Andrea">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum assumenda, facere quia voluptatem repellendus veniam ea alias? Vero libero alias optio rerum fuga, deserunt animi sit, autem natus et aliquid.
+</div> -->
+
+
+
+<!-- document.getElementById("Andrea") retrieves the div with the ID tag 'Andrea' -->
+
+
+<!-- document 
+// textContent -- replaces entire  markup with plan text content
+    to append, save what was already there you can do .textContent  += 'New Text' will add 
+        New Text on the end 
+// innerHTML -- allows you to add HTML markup around text you are adding "<b>Bold Text</b> "
+// innerText
+
+... these all allow you to change text of an element -->
+
+<!-- GET and SET an attribute -->
+<!-- <a href="http://www.yahoo.com" id="myAnchor">Google</a> -->
+<!-- var anchorList = document.getElementByTagName('a') 
+    anchorList.item(0)
+    anchorList[0]
+    anchorList[0].getAttribute('href') will give us 'http://yahoo.com'
+    anchorList[0].setAttribute('href', 'http://www.google.com')  will set the href to the correct site 
+-->
+
+
+<!-- querySelector and querySelectorAll .... can use these instead of all the specifc ones
+    returns a single element// retrieves a list of elements
+
+    if you want everything in your body tag:
+    document.querySelector('body')
+
+-->
+
+
+
+    <script>
+
+    var p = document.querySelectorAll('p');
+
+    for( var i=0; i < p.length; i++) {
+        p[i].setAttribute("class", "titleBlue");
+    }
+    </script>
+
+        <!-- // let div = document.getElementById("Andrea");
+        // console.log("This is my HTML file...", div)
+
+        // window.alert('HEY!');
+     -->
+</body>
+</html>
+
