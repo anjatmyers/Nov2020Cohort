@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Hello World
+    <script>
+
+        // var greeting = function(name) {
+        //     console.log('hello', name);
+        //     return name
+        // }
+
+        // console.log(greeting('Adam')) 
+        // the () invokes the function 
+        // just putting 'greeting' allows you to pass the function as a variable into another function
+
+
+        // anonymous functions below: b/c they are assigned to variables 
+        // var add = function(num1, num2){
+        //     return num1 + num2;
+        // }
+        // var sub = function(num1, num2){
+        //     return num1 - num2;
+        // }
+        // var mult = function(num1, num2){
+        //     return num1 * num2;
+        // }
+
+
+        // higher order function (bc it accepts a function as parameters)
+
+        // var calc = function(num1, num2, operation){
+
+        //     return operation(num1, num2);
+        //     // this is the way to invoke the add function passed in 
+        // }
+
+
+        // var a = 4;
+        // var b = 45;
+        // var arr = [add, sub, mult];
+
+        // var result = calc(a, b, add);
+        // here you are passing the definition of add to calc
+
+        // for loop using the callback functions 
+
+        // for (let i=0; i<arr.length; i++){
+        //     console.log(calc(a, b, arr[i]));
+        //     //  now you are passing three operation variables into the calc function so it adds, subs, and multiplies the a, and b passed with it
+        // }
+
+
+
+// loops in Javascript
+
+// var arr = [11, 22, 43, 56, 43, 76, 99];
+
+// arr.forEach(function(val, index){
+//     // the second parameter will always be the index of the array
+
+//     if (index + 1 < arr.length){
+//         console.log(val *arr[index+1]);
+//     }
+//     // will mult one index by the next until the array is finished
+//     console.log(val);
+//     // this will console.log each item in the array
+//     console.log(val*2 +1);
+    // this will console.log each item in the array and mult by 2 and add 1
+
+    // })
+
+// forEach is a higher order function so it takes a callback function as a parameter
+
+// array.filter
+
+// var students = ['Andrea', 'Kim', 'Kanny', 'Ally']
+
+// var newStudents = students.filter(function(student){
+//      return student != 'Kim'
+// })
+// excludes kim only from the list 
+
+
+
+
+// array.some() returns true if every element in an array meets your condition 
+
+// var arr = [4, 6, 5, 3, 3, 6, 9, 9, 1];
+
+// var eitherTrueOrFalse = arr.some(function(num){
+
+//     return num > 2;
+//     // if one num is > 2 then it will return true
+
+// })
+
+// console.log(eitherTrueOrFalse); 
+// returns true because one element meets the condition
+
+
+// array.reduce()
+// can set initial value as well 
+
+initalVal = 30;
+
+var arr = [4, 8, 9, 10, 5, 7, 2];
+
+var sum = arr.reduce(function(acc, currentVal){
+
+    return acc + currentVal
+
+}, initalVal)
+
+console.log(sum);
+// ...........................
+var str = ['a', 'n', 'd', 'r', 'e', 'a']
+
+var name = str.reduce(function(acc, currentVal){
+    return acc + currentVal
+}, '')
+
+console.log(name);
+
+ 
+var people = [ 'Dom', 'Lyn', 'Kirk', 'Autumn', 'Trista', 'Jesslyn', 'Kevin', 'John', 'Eli', 'Juan', 'Robert', 'Keyur', 'Jason', 'Che', 'Ben' ];
+
+people.sort(function(a, b){
+    return a.length - b.length
+})
+
+console.log(people);
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

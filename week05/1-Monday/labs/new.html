@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+
+
+    </ul>
+
+
+    <script>
+        var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+        var newDays = days.map(function(day){
+
+            return `<li>${day}</li>`
+
+        })
+        console.log(newDays);
+        console.log(newDays.join('')); 
+        // will have a string of list tags of the days
+
+        var ulNode = document.querySelector('ul');
+        ulNode.innerHTML = newDays.join('');
+        // this pushes the list to the ul tag
+
+        
+        
+        
+
+    </script>
+    
+</body>
+</html>
