@@ -1,3 +1,7 @@
-window.addEventListener('DOMContentLoaded', function() {
-  // Execute after page load
-})
+// window.addEventListener('click', function(e) {
+//   // Execute after page load  e.target.id
+// })
+
+//button  dealer.addEventListener('click', ()=>{
+
+//})
