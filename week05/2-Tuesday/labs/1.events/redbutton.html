@@ -39,6 +39,36 @@
     </div>
 
 
+<script>
+// addEventListener
+var count = 0;
+var bigRedButton = document.querySelector('#big-red-button');
+let countDiv = document.querySelector('#count');
+
+bigRedButton.addEventListener('click', ()=>{
+
+    count++;
+    countDiv.textContent = count;
+
+})
+
+
+//  another way to add counter
+// retreive element out of dom
+
+// var bigRedButton = document.querySelector('#big-red-button');
+
+// var clickCount = 0;
+// var countDiv = document.querySelector('#count');
+
+// bigRedButton.onclick = ()=>{
+//     clickCount++;
+
+//     countDiv.textContent = clickCount.toString();
+// }
+
+
     
+</script>
 </body>
 </html>

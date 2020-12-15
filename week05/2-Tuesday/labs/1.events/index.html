@@ -18,8 +18,71 @@
     <li><img src="images/red.gif" alt="red" id="red"></li>
   </ul>
 
+  <div id="response" ></div>
   
   <script>
+  // generic event listener
+// retrieve ul tag 
+// attach E.L to ul ag
+// retrieve response div
+
+var ulTag = document.querySelector('ul');
+var response = document.querySelector('#response');
+
+ulTag.addEventListener('click', (e) => {
+  response.textContent = `On Wednesdays we wear ${e.target.id}.`
+
+
+
+    // switch(e.target.id){
+
+    //   case e.target.id:
+    //   case 'pink': 
+    //     response.textContent = `On Wednesdays we wear ${e.target.id}.`
+    //     break;
+    //   case 'orange': 
+    //     response.textContent = `On Wednesdays we wear ${e.target.id}.`
+    //     break;
+    //   case 'yellow': 
+    //     response.textContent = `On Wednesdays we wear ${e.target.id}.`
+    //     break;
+    //   case 'green': 
+    //     response.textContent = `On Wednesdays we wear ${e.target.id}.`
+    //     break;
+    //   case 'gray': 
+    //     response.textContent = `On Wednesdays we wear ${e.target.id}.`
+    //     break;
+    //   case 'red': 
+    //     response.textContent = `On Wednesdays we wear ${e.target.id}.`
+    //     break;
+    //   case 'blue': 
+    //     response.textContent = `On Wednesdays we wear ${e.target.id}.`
+    //     break;
+    //   case 'purple': 
+    //     response.textContent = `On Wednesdays we wear ${e.target.id}.`
+    //     break;
+    //   case 'ygreen': 
+    //     response.textContent = `On Wednesdays we wear ${e.target.id}.`
+    //     break;
+    //   default:
+    //     response.textContent = "No color found";
+    //     break;
+
+    // }
+})
+
+// event is an event object handed back from the browser
+
+
+// specific event listener 
+  // choose image
+  // when user clicks on image, alert pops up with name of color
+  // var pink = document.querySelector('#pink');
+  // var response = document.querySelector('#response');
+  // pink.addEventListener('click', () => {
+
+  //   response.textContent = "On Wednesdays we wear pink."
+  // })
 
     
   </script>

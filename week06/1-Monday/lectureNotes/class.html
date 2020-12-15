@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- everything starts with a $  -->
+
+<a href="#">Google</a>
+<a href="#">Instagram</a>
+<a class = "dc" href="#">Facebook</a>
+<a href="#">Yahoo</a>
+
+
+<img class = "dc" src="#" alt="" id="1">
+
+
+<div>
+    hello
+</div>
+
+<button>Click Me</button>
+
+
+
+
+
+
+    <!-- jQuery link to minimized file -->
+   <script   src="http://code.jquery.com/jquery-3.5.1.min.js"   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="   crossorigin="anonymous"></script>
+
+   <!-- we have to load in the Jquery library using $ -->
+   <!-- this is the new way -->
+   <script>
+       $(() => {
+           
+        let $results = $('a');
+        console.log(results);
+
+        let $imageId1 = $('#1');
+
+        let $classDC = $('.dc');
+
+        // .html to change the innerText 
+        $('div').html('<b>New Hello from JQuery</b>')
+
+
+        // creating new elements
+
+        // var $newElement = $('<div>')
+
+        let $a = $('<a>', {
+
+            'class': 'dc', 
+            'text': 'Click me!', 
+            'href': 'http://google.com'
+                        
+        })
+            // creates an a element and an object with all its attributes
+
+        let $image = $('<img>', {
+            'src': 'images/path.jpeg',
+            'alt': 'this is an image of...'
+        })
+
+
+        // let $divDC = $('div.dc');
+        // // appends elements
+        // $divDC.append($a);
+
+        let $div = $('div');
+        // retrieving all divs on page
+        // add Class
+        $div.addClass('dc');
+
+        // remove Class
+        $div.removeClass('dc');
+        
+        // HANDLING EVENTS
+
+        $div.click(() => {
+            // event logic
+        })
+
+
+        // toggling with buttons
+
+        $('button').click(() => {
+            $('div').eq(0).toggleClass('dc')
+
+        })
+        // eq 1 only applies to the first div element 
+
+
+        // on works like add event listener, takes two arguments 
+        $('button').on('click', (e) => {
+
+            $('div').toggleClass('dc')
+        })
+
+        // prevent default behavior from happening 
+        $('a').click((e) => {
+            e.preventDefault();
+        })
+
+
+
+        // keyUP and keyDOWN
+
+        $('body').keydown(() => {
+            
+            alert('Hello Space Baby')
+
+        })
+        // any key pressed will trigger an alert
+        // key up is usually to reverse something in keydown
+
+        $('body').keydown(() => {
+            $('div').addClass('purple')
+        })
+
+        $('body').keyup(() => {
+            $('div').removeClass('purple');
+            $('div').addClass('dc');
+        })
+
+        
+        // animations toggle between show and hide with button
+
+        $('button').click(() => {
+            
+            $('div').toggle();
+        })
+
+
+        // Fading effects, when our page loads things fade in 
+
+        $('div').fadeOut(3000);
+        // will fade out after 3 seconds (written in miliseconds)
+
+
+        // slide up and slide down while fading 
+        $('div').fadeOut(2000).slideUp(3000);
+
+
+        // reserch animate() because you can do custom animations
+      
+
+
+
+
+
+
+
+       })
+   </script>
+</body>
+</html>

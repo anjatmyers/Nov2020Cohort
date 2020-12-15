@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        // key selectors
+        // attach event listener to body element 
+        // create event listener for keydown and keyup
+var body = document.querySelector('body');
+
+body.addEventListener('keydown', (e) => {
+    if (e.key === 'p'){
+        body.style.backgroundColor ='lightpink';
+    }
+})
+
+body.addEventListener('keyup', (e) => {
+    
+    body.style.backgroundColor ='white';
+})
+
+// this one allows background to stay white unless the key 'p' is down
+
+
+    </script>
+</body>
+</html>
